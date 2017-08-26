@@ -139,7 +139,7 @@ var app = app || {};
     // TODO: Call the Handlebars `.compile` function, which will return a function for you to use where needed.
     // Make sure you assign the result of your Handlebars.compile call to a variable called "template", since
     // we are then calling "template" on line 117.
-    var source = $('#author-stats').html();
+    var source = $('#author-template').html();
     var template = Handlebars.compile(source);
     // REVIEW: We use `forEach` here because we are relying on the side-effects of the callback function:
     // appending to the DOM.
