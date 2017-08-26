@@ -92,7 +92,7 @@ var app = app || {};
       return {
         name: author,
         numWords: Article.all.filter(article => article.author === author)
-          .map(article.body.split(" ").length)
+          .map(article => article.body.split(" ").length)
           .reduce((acc, num) => acc + num)
       }
     })
